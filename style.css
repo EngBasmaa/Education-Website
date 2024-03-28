@@ -1,0 +1,636 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+:root {
+  --green: #00e77f;
+  --white: #fff;
+  --light-white: #aaa;
+  --black: #3d3d3d;
+  --light-bg: #4b4b4b;
+}
+
+* {
+  font-family: "Rubik", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  transition: 0.2s linear;
+  text-transform: capitalize;
+}
+
+html {
+  font-size: 70%;
+  /* overflow: hidden; */
+  scroll-behavior: smooth;
+  scroll-padding-top: 8rem;
+}
+
+/* ::selection => is a 'pseudo-element' that represents the part of the document that has been selected by the user. */
+/* (e.g., when they 'click' and 'drag' to select text) */
+*::selection {
+  background-color: var(--white);
+  color: var(--black);
+}
+
+/* my scrollbar */
+::-webkit-scrollbar {
+  height: 0.5rem;
+  width: 1rem;
+}
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--green);
+  border-radius: 5rem;
+}
+/* body */
+body {
+  background-color: var(--black);
+}
+
+section {
+  /* max-width: 100%; */
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: var(--light-bg);
+}
+
+.header .flex {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header .flex .logo {
+  font-size: 2.7rem;
+  color: var(--white);
+}
+
+.header .flex .navbar a {
+  font-size: 1.5rem;
+  margin-left: 2rem;
+  color: var(--light-white);
+}
+
+.header .flex .navbar a:hover {
+  color: var(--green);
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+
+#menu-btn {
+  cursor: pointer;
+  color: var(--white);
+  font-size: 3rem;
+  display: none;
+}
+
+/* ------------ Main Part ------------ */
+.home {
+  margin-top: 6rem;
+}
+
+.home .row {
+  display: flex;
+  align-items: center;
+  /* to make them be 'vertical' */
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.home .row .content {
+  flex: 1 1 40rem;
+  text-align: center;
+}
+
+.home .row .content h3 {
+  margin-bottom: 1rem;
+  font-size: 9rem;
+  color: var(--white);
+  /* to narrow the two lines together */
+  line-height: 1;
+}
+
+.home .row .content h3 span {
+  color: var(--green);
+}
+
+.home .row .image {
+  flex: 1 1 40rem;
+}
+
+.home .row .image img {
+  width: 100%;
+  height: auto;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  border-radius: 5rem;
+  background-color: var(--light-bg);
+  color: var(--white);
+  font-size: 2.5rem;
+  cursor: pointer;
+  padding: 1.5rem 4rem;
+}
+
+.btn:hover {
+  color: var(--black);
+  background-color: var(--white);
+  font-weight: 600;
+}
+
+/* ------------ counter Part ------------ */
+
+.fa-solid {
+  color: var(--green);
+  font-size: 5rem;
+}
+
+.count {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  flex-wrap: wrap;
+  color: var(--white);
+  font-size: 2rem;
+  width: 95%;
+}
+
+.box-container {
+  display: flex;
+  gap: 3rem;
+  background-color: var(--light-bg);
+  padding: 2rem 3rem;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.text {
+  color: var(--light-white);
+}
+
+/* ------------ about Part ------------ */
+
+.about .row {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.about .row .image {
+  flex: 1 1 40rem;
+}
+
+.about .row .image img {
+  width: 100%;
+  height: auto;
+}
+
+.about .row .content {
+  flex: 1 1 40rem;
+  text-align: center;
+}
+
+.about .row .content h3 {
+  margin-bottom: 1rem 0;
+  font-size: 4rem;
+  color: var(--white);
+}
+.about .row .content p {
+  line-height: 2.5rem;
+  font-size: 1.6rem;
+  color: var(--light-white);
+  margin: 2.5rem;
+}
+
+/* ------------ courses Part ------------ */
+
+.heading {
+  font-size: 4rem;
+  color: var(--white);
+  margin: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 5rem;
+}
+
+.heading span {
+  color: var(--green);
+  text-transform: uppercase;
+}
+
+.swiper-wrapper {
+  margin-bottom: 4rem;
+}
+
+.swiper-slide {
+  width: 50%;
+  background-color: var(--light-bg);
+  border-radius: 2rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 4rem;
+  padding: 2rem;
+  cursor: default;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.swiper-slide img {
+  height: 35rem;
+  width: 100%;
+}
+
+.swiper-slide h3 {
+  color: var(--white);
+  font-size: 2.5rem;
+  margin: 1.5rem 0;
+}
+
+.swiper-slide p {
+  color: var(--light-white);
+  line-height: 2.5rem;
+  font-size: 1.6rem;
+}
+
+.swiper-pagination-bullet {
+  background: var(--white);
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--green);
+}
+
+/* ------------ teachers Part ------------ */
+
+.teachers .fa-brands {
+  color: var(--black);
+  background-color: var(--white);
+  font-size: 2rem;
+  padding: 1rem;
+  width: 5rem;
+  border-radius: 50%;
+
+  display: block;
+  margin-top: 1rem;
+  height: 4rem;
+  width: 4rem;
+  text-align: center;
+}
+
+.teachers .fa-brands:hover {
+  color: var(--green);
+  background-color: var(--light-white);
+}
+
+.teachers .swiper-slide {
+  position: relative;
+  overflow: hidden;
+}
+
+.share {
+  position: absolute;
+  top: 2rem;
+  /* to be hidden to left */
+  left: -5rem;
+
+  transition: left 0.3s ease; /* Add transition property for smooth animation */
+}
+
+.teachers .swiper-slide:hover .share {
+  left: 3rem;
+}
+
+/* ------------ reviews Part ------------ */
+
+.reviews-slider .user {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.reviews-slider .user img {
+  width: 7rem;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.reviews-slider p {
+  padding: 2rem;
+  line-height: 2.5rem;
+  font-size: 1.6rem;
+}
+
+.user-info .fa-star,
+.fa-star-half-alt {
+  font-size: 2rem;
+  color: var(--green);
+}
+
+.reviews-slider .swiper-wrapper {
+  display: flex;
+}
+
+/* ------------ contact us Part ------------ */
+
+.contact {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.contact .row form {
+  flex: 1 1 40rem;
+  /* order: 2; This ensures the form comes after the image in the flex container */
+}
+
+.contact .row .image {
+  flex: 1 1 40rem;
+  width: 100%;
+  /* order: 1; */
+}
+
+.contact .row {
+  display: flex;
+  flex-wrap: wrap;
+  /* flex-direction: column; */
+  gap: 2rem;
+}
+
+.contact .row form .form-group {
+  width: 1rem;
+}
+
+/* for 'option' */
+.contact .row form .box {
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  border-radius: 0.5rem;
+  background-color: var(--light-bg);
+  font-size: 1.5rem;
+  color: var(--white);
+}
+
+.label-text {
+  color: var(--white);
+  font-size: 1.7rem;
+  margin-bottom: 1.5rem;
+  display: inline-block;
+  font-weight: 400;
+}
+
+.form-group {
+  text-align: center;
+  align-items: center;
+}
+
+.contact .row .image img {
+  width: 100%;
+}
+
+.contact .row form .radio .input {
+  appearance: none;
+  border-radius: 0%;
+  cursor: pointer;
+}
+
+input,
+select {
+  background: var(--light-white);
+  padding: 0.8rem 1rem;
+  display: block;
+  width: 100%;
+  border-radius: 0.5rem;
+  resize: none;
+  /* to remove the 'arrow down'
+            appearance: none; */
+  margin-bottom: 2rem;
+}
+
+.contact .row form .radio {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 1rem;
+  margin-right: 3rem;
+  margin-bottom: 8rem;
+}
+
+.contact .row form .radio #female,
+#male {
+  margin-left: 6rem;
+}
+
+.contact .row form .radio label {
+  font-size: 2rem;
+  margin-right: 10rem;
+}
+.submit {
+  color: var(--black);
+  background-color: var(--light-white);
+  font-weight: 600;
+  font-size: 2.5rem;
+  margin-top: 2.5rem;
+  padding: 3rem 3rem;
+  border-radius: 50%;
+  width: 30rem;
+  margin-left: 25%;
+}
+
+.submit:hover {
+  color: var(--green);
+  background-color: var(--white);
+  font-weight: 800;
+  font-size: 2.5rem;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  margin-bottom: 3rem;
+  border-bottom: 2px grey solid;
+  padding-bottom: 3rem;
+}
+
+.socials .fa-brands {
+  color: var(--green);
+  background-color: var(--white);
+  padding: 1rem;
+  border-radius: 50%;
+}
+
+.copyright {
+  color: var(--white);
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 5rem;
+  margin-top: 5rem;
+}
+
+.copyright span {
+  color: var(--green);
+}
+
+/* ====================== Media Queries (Medium Devices) at (1100px) ====================== */
+@media screen and (max-width: 1100px) {
+  html {
+    font-size: 50%;
+  }
+
+  .home .row .content h3 {
+    font-size: 8rem;
+  }
+}
+
+/* ====================== Media Queries (Medium Devices) at (950px) ====================== */
+@media screen and (max-width: 950px) {
+  html {
+    font-size: 50%;
+  }
+
+  #menu-btn {
+    display: inline-block;
+    color: white;
+  }
+
+  #menu-btn.fa-times {
+    transform: rotate(180deg);
+  }
+
+  .header .flex .navbar {
+    position: absolute;
+    top: 99%;
+    left: 0;
+    right: 0;
+    border-top: 0.3rem solid var(--light-white);
+    border-bottom: 0.3rem solid var(--light-white);
+    background-color: var(--light-bg);
+    /* using: clip-path */
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+
+  .header .flex .navbar.active {
+    /* using: clip-path */
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+
+  .header .flex .navbar a {
+    display: block;
+    margin: 2rem;
+  }
+
+  .home .row .content h3 {
+    font-size: 5rem;
+  }
+
+  .home .row {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    align-items: center;
+  }
+  .home .row .image img {
+    width: 100%;
+    height: 70rem;
+  }
+
+  .home .row .content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .btn {
+    padding: 2rem 4rem;
+    width: 25rem;
+  }
+
+  .box-container {
+    padding: 2rem 4rem;
+  }
+
+  .about .row {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    align-items: center;
+  }
+
+  .about .row .image img {
+    width: 100%;
+    height: 70rem;
+  }
+}
+
+/* ====================== Media Queries (Small Devices) at (840px) ====================== */
+
+@media screen and (max-width: 840px) {
+  html {
+    font-size: 50%;
+  }
+
+  .home .row .content {
+    font-size: 50%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .count {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    justify-content: center;
+    padding: 5rem;
+  }
+}
+
+/* ====================== Media Queries (Small Devices) at (700px) ====================== */
+
+@media screen and (max-width: 700px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+/* ====================== Media Queries (Small Devices) at (600px) ====================== */
+
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 45%;
+  }
+}
+
+/* ====================== Media Queries (Small Devices) at (840px) ====================== */
+
+@media screen and (max-width: 500px) {
+  html {
+    font-size: 40%;
+  }
+  .box-container {
+    font-size: 80%;
+    padding: 2rem 1rem;
+  }
+
+  .courses .swiper-slide img {
+    height: auto;
+    width: 30rem;
+  }
+}

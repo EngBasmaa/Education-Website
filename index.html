@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Complete Responsive Online Education Website</title>
+
+    <!-- font awesome cdn link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <!-- (Swipers) CDN  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- custom css file link -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <section class="flex">
+        <a href="#home" class="logo">EDUCA.</a>
+
+        <nav class="navbar">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#courses">Courses</a>
+          <a href="#teachers">Teachers</a>
+          <a href="#reviews">Reviews</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <i class="bx bx-menu"></i>
+        <i id="menu-btn" class="fas fa-bars"></i>
+      </section>
+    </header>
+
+    <!-- ============== Header section Ends ============== -->
+
+    <section class="home" id="home">
+      <div class="row">
+        <div class="content">
+          <h3>Online <span>Education</span></h3>
+          <a href="#contact" class="btn" title="contact">Contact Us</a>
+        </div>
+
+        <div class="image">
+          <img src="./assets/header-image.png" alt="online learning image" />
+        </div>
+      </div>
+    </section>
+    <!-- ============== Home section Ends ============== -->
+    <section class="count">
+      <div class="box-container">
+        <i class="fa-solid fa-graduation-cap"></i>
+        <div class="content">
+          <h3>150+</h3>
+          <p class="text">Courses</p>
+        </div>
+      </div>
+
+      <div class="box-container">
+        <i class="fa-solid fa-user-graduate"></i>
+        <div class="content">
+          <h3>1500+</h3>
+          <p class="text">Students</p>
+        </div>
+      </div>
+
+      <div class="box-container">
+        <i class="fa-solid fa-chalkboard-user"></i>
+        <div class="content">
+          <h3>70+</h3>
+          <p class="text">Teachers</p>
+        </div>
+      </div>
+
+      <div class="box-container">
+        <i class="fa-solid fa-face-smile"></i>
+        <div class="content">
+          <h3>100%</h3>
+          <p class="text">Satisfaction</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- count section Ends -->
+
+    <section class="about" id="about">
+      <div class="row">
+        <div class="image">
+          <img src="./assets/why-choose-us.png" alt="about us image" />
+        </div>
+
+        <div class="content">
+          <h3>Why Choose Us?</h3>
+          <p>
+            Our company is dedicated to providing high-quality online education
+            that empowers individuals to achieve their academic and professional
+            goals. With a team of experienced educators and industry
+            professionals, we strive to offer engaging content and support to
+            help our students succeed.
+          </p>
+          <a href="#contact" class="btn" title="contact">Contact Us</a>
+        </div>
+      </div>
+    </section>
+    <!-- about section Ends -->
+    <section class="courses" id="courses">
+      <h1 class="heading">Our <span>Courses</span></h1>
+      <div class="swiper courses-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./assets/digital-marketing.png" alt="digital-marketing" />
+            <h3>Digital Marketing</h3>
+            <p>
+              Digital marketing involves the use of digital channels to promote
+              products or services to consumers. It includes strategies for
+              search engine optimization (SEO), pay-per-click (PPC) advertising,
+              social media marketing, email marketing, and content marketing.
+            </p>
+          </div>
+
+          <div class="swiper-slide">
+            <img src="./assets/Engineering.png" alt="digital-marketing" />
+            <h3>Engineering</h3>
+            <p>
+              Engineering is a broad field that involves the application of
+              scientific principles to design or develop solutions to problems.
+              It includes disciplines like civil engineering, mechanical
+              engineering, electrical engineering, chemical engineering, and
+              more.
+            </p>
+          </div>
+
+          <div class="swiper-slide">
+            <img src="./assets/web-development.png" alt="digital-marketing" />
+            <h3>Web Development</h3>
+            <p>
+              Web development is the work involved in developing a website for
+              the Internet or an intranet. It includes web design, web
+              publishing, web programming, and database management.
+            </p>
+          </div>
+
+          <div class="swiper-slide">
+            <img src="./assets/graphic-design.png" alt="digital-marketing" />
+            <h3>Graphic Design</h3>
+            <p>
+              Graphic design is the process of visual communication through the
+              use of typography, images, and page layout to convey ideas and
+              information. It involves creating visual content for various
+              media, including print, digital, and interactive platforms.
+            </p>
+          </div>
+
+          <div class="swiper-slide">
+            <img src="./assets/teaching.png" alt="digital-marketing" />
+            <h3>Teaching</h3>
+            <p>
+              Teaching involves the process of imparting knowledge, skills,
+              values, and habits to students. It requires a deep understanding
+              of the subject matter, effective communication skills, and the
+              ability to engage and motivate students.
+            </p>
+          </div>
+
+          <div class="swiper-slide">
+            <img
+              src="./assets/science-and-biology.png"
+              alt="digital-marketing"
+            />
+            <h3>Science & Biology</h3>
+            <p>
+              Science and biology involve the study of the natural world through
+              observation and experimentation. Biology, in particular, is
+              concerned with the study of life and living organisms, including
+              their structure, function, growth, origin, and evolution.
+            </p>
+          </div>
+        </div>
+        <!-- Pagination ... 'outside' of the 'container' -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+    <!-- courses section Ends -->
+    <section class="teachers" id="teachers">
+      <h1 class="heading">Expert <span>Tutors</span></h1>
+
+      <div class="swiper teachers-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./assets/tutors/img 1.jpeg" alt="tutor 1" />
+
+            <div class="share">
+              <a
+                href="https://linkedin.com"
+                target="_blank"
+                rel="noopener"
+                title="Visit our linkedin page"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+
+              <a
+                href="https://twitter.com"
+                target="_blank"
+                rel="noopener"
+                title="Visit our twitter page"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+
+              <a
+                href="https://facebook.com"
+                target="_blank"
+                rel="noopener"
+                title="Visit our Facebook page"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
+
+              <a
+                href="https://instagram.com"
+                target="_blank"
+                rel="noopener"
+                title="Visit our instagram page"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+            </div>
+            <h3>Leila Deo</h3>
+          </div>
+
+          <div class="swiper-slide">
+            <img src="./assets/tutors/img 2.jpeg" alt="tutor 1" />
+
+            <div class="share">
+              <a
+                href="https://linkedin.com"
+                target="_blank"
+                rel="noopener"
+                title="Visit our linkedin page"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+
+              <a
+                href="https://twitter.com"
+                target="_blank"
+                rel="noopener"
+                title="Visit our twitter page"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+
+              <a
+                href="https://facebook.com"
+                target="_blank"
+                rel="noopener"
+                title="Visit our Facebook page"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
+
+              <a
+                href="https://instagram.com"
+                target="_blank"
+                rel="noopener"
+                title="Visit our instagram page"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+            </div>
+            <h3>Mary Richard</h3>
+          </div>
+
+          <div class="swiper-slide">
+            <img src="./assets/tutors/img 3.jpeg" alt="tutor 1" />
+
+            <div class="share">
+              <a
+                href="https://linkedin.com"
+                target="_blank"
+                rel="noopener"
+                title="Visit our linkedin page"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+
+              <a
+                href="https://twitter.com"
+                target="_blank"
+                rel="noopener"
+                title="Visit our twitter page"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+
+              <a
+                href="https://facebook.com"
+                target="_blank"
+                rel="noopener"
+                title="Visit our Facebook page"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
+
+              <a
+                href="https://instagram.com"
+                target="_blank"
+                rel="noopener"
+                title="Visit our instagram page"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+            </div>
+            <h3>David Charles</h3>
+          </div>
+
+          <div class="swiper-slide">
+            <img src="./assets/tutors/img 4.jpeg" alt="tutor 1" />
+
+            <div class="share">
+              <a
+                href="https://linkedin.com"
+                target="_blank"
+                rel="noopener"
+                title="Visit our linkedin page"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+
+              <a
+                href="https://twitter.com"
+                target="_blank"
+                rel="noopener"
+                title="Visit our twitter page"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+
+              <a
+                href="https://facebook.com"
+                target="_blank"
+                rel="noopener"
+                title="Visit our Facebook page"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
+
+              <a
+                href="https://instagram.com"
+                target="_blank"
+                rel="noopener"
+                title="Visit our instagram page"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+            </div>
+            <h3>Patricia Joseph</h3>
+          </div>
+
+          <div class="swiper-slide">
+            <img src="./assets/tutors/img 5.jpeg" alt="tutor 1" />
+
+            <div class="share">
+              <a
+                href="https://linkedin.com"
+                target="_blank"
+                rel="noopener"
+                title="Visit our linkedin page"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+
+              <a
+                href="https://twitter.com"
+                target="_blank"
+                rel="noopener"
+                title="Visit our twitter page"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+
+              <a
+                href="https://facebook.com"
+                target="_blank"
+                rel="noopener"
+                title="Visit our Facebook page"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
+
+              <a
+                href="https://instagram.com"
+                target="_blank"
+                rel="noopener"
+                title="Visit our instagram page"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+            </div>
+            <h3>Christopher Minjun</h3>
+          </div>
+
+          <div class="swiper-slide">
+            <img src="./assets/tutors/img 6.jpeg" alt="tutor 1" />
+
+            <div class="share">
+              <a
+                href="https://linkedin.com"
+                target="_blank"
+                rel="noopener"
+                title="Visit our linkedin page"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+
+              <a
+                href="https://twitter.com"
+                target="_blank"
+                rel="noopener"
+                title="Visit our twitter page"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+
+              <a
+                href="https://facebook.com"
+                target="_blank"
+                rel="noopener"
+                title="Visit our Facebook page"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
+
+              <a
+                href="https://instagram.com"
+                target="_blank"
+                rel="noopener"
+                title="Visit our instagram page"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+            </div>
+            <h3>Linda Richard</h3>
+          </div>
+
+          <div class="swiper-slide">
+            <img src="./assets/tutors/img 7.jpeg" alt="tutor 1" />
+
+            <div class="share">
+              <a
+                href="https://linkedin.com"
+                target="_blank"
+                rel="noopener"
+                title="Visit our linkedin page"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+
+              <a
+                href="https://twitter.com"
+                target="_blank"
+                rel="noopener"
+                title="Visit our twitter page"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+
+              <a
+                href="https://facebook.com"
+                target="_blank"
+                rel="noopener"
+                title="Visit our Facebook page"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
+
+              <a
+                href="https://instagram.com"
+                target="_blank"
+                rel="noopener"
+                title="Visit our instagram page"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+            </div>
+            <h3>Yonatan Azizi</h3>
+          </div>
+
+          <div class="swiper-slide">
+            <img src="./assets/tutors/img 8.jpeg" alt="tutor 1" />
+
+            <div class="share">
+              <a
+                href="https://linkedin.com"
+                target="_blank"
+                rel="noopener"
+                title="Visit our linkedin page"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+
+              <a
+                href="https://twitter.com"
+                target="_blank"
+                rel="noopener"
+                title="Visit our twitter page"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+
+              <a
+                href="https://facebook.com"
+                target="_blank"
+                rel="noopener"
+                title="Visit our Facebook page"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
+
+              <a
+                href="https://instagram.com"
+                target="_blank"
+                rel="noopener"
+                title="Visit our instagram page"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+            </div>
+            <h3>Daichi Wei</h3>
+          </div>
+
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- reviews section Ends -->
+
+    <section id="reviews">
+      <h1 class="heading">Student's <span>Reviews</span></h1>
+
+      <div class="swiper reviews-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Non sunt
+              doloremque rem, ratione culpa labore autem recusandae repellendus
+              dicta dolorem nesciunt ex assumenda velit accusamus, voluptate
+              reiciendis accusantium at distinctio?
+            </p>
+
+            <div class="user">
+              <img src="./assets/students/student 1.jpeg" alt="tutor 1" />
+              <div class="user-info">
+                <h3>Lian Ali</h3>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fa-regular fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+
+          <div class="swiper-slide">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Non sunt
+              doloremque rem, ratione culpa labore autem recusandae repellendus
+              dicta dolorem nesciunt ex assumenda velit accusamus, voluptate
+              reiciendis accusantium at distinctio?
+            </p>
+
+            <div class="user">
+              <img src="./assets/students/student 2.jpeg" alt="tutor 2" />
+              <div class="user-info">
+                <h3>Milano Jolian</h3>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fa-regular fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+
+          <div class="swiper-slide">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Non sunt
+              doloremque rem, ratione culpa labore autem recusandae repellendus
+              dicta dolorem nesciunt ex assumenda velit accusamus, voluptate
+              reiciendis accusantium at distinctio?
+            </p>
+
+            <div class="user">
+              <img src="./assets/students/student 3.jpeg" alt="tutor 3" />
+              <div class="user-info">
+                <h3>Vera Glon</h3>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fa-regular fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+
+          <div class="swiper-slide">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Non sunt
+              doloremque rem, ratione culpa labore autem recusandae repellendus
+              dicta dolorem nesciunt ex assumenda velit accusamus, voluptate
+              reiciendis accusantium at distinctio?
+            </p>
+
+            <div class="user">
+              <img src="./assets/students/student 4.jpeg" alt="tutor 4" />
+              <div class="user-info">
+                <h3>Aurelie James</h3>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fa-regular fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+
+          <div class="swiper-slide">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Non sunt
+              doloremque rem, ratione culpa labore autem recusandae repellendus
+              dicta dolorem nesciunt ex assumenda velit accusamus, voluptate
+              reiciendis accusantium at distinctio?
+            </p>
+
+            <div class="user">
+              <img src="./assets/students/student 5.jpeg" alt="tutor 5" />
+              <div class="user-info">
+                <h3>Ekta Yonatan</h3>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fa-regular fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+
+          <div class="swiper-slide">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Non sunt
+              doloremque rem, ratione culpa labore autem recusandae repellendus
+              dicta dolorem nesciunt ex assumenda velit accusamus, voluptate
+              reiciendis accusantium at distinctio?
+            </p>
+
+            <div class="user">
+              <img src="./assets/students/student 6.jpeg" alt="tutor 6" />
+              <div class="user-info">
+                <h3>Zahra William</h3>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fa-regular fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+
+          <div class="swiper-slide">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Non sunt
+              doloremque rem, ratione culpa labore autem recusandae repellendus
+              dicta dolorem nesciunt ex assumenda velit accusamus, voluptate
+              reiciendis accusantium at distinctio?
+            </p>
+
+            <div class="user">
+              <img src="./assets/students/student 7.jpeg" alt="tutor 7" />
+              <div class="user-info">
+                <h3>Hasan Pierre</h3>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fa-regular fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact section Ends -->
+    <section class="contact" id="contact">
+      <h1 class="heading">Contact <span>Us</span></h1>
+
+      <div class="row">
+        <div class="image">
+          <img src="./assets/send-message.png" alt="contact us image" />
+        </div>
+
+        <!-- ... form action 'url' ... -->
+
+        <form
+          class="form-style"
+          action="https://formspree.io/f/mayrdzaa"
+          method="POST"
+        >
+          <div class="form_group">
+            <!-- Data entry -->
+            <label for="name" class="label-text">Your Name</label>
+            <input
+              type="text"
+              placeholder="Enter Your Name"
+              name="Student's Name"
+              maxlength="30"
+              id="name"
+              required
+            />
+            <!-- Note: 'name' is the label in the (database tabel of records) -->
+          </div>
+
+          <div class="form_group">
+            <label for="email" class="label-text">Your Email</label>
+            <input
+              type="email"
+              placeholder="enter your valid email"
+              name="Student's email"
+              id="email"
+              required
+            />
+          </div>
+
+          <div class="form_group">
+            <label for="phone" class="label-text">Your Phone Number</label>
+            <input
+              type="number"
+              placeholder="Enter Your Phone"
+              name="Student's Phone"
+              id="phone"
+              onkeypress="if(this.value.length == 10) return false;"
+              required
+            />
+          </div>
+
+          <div class="form_group">
+            <label for="course" class="label-text">Select Course</label>
+            <select name="Course" id="course" class="box" required>
+              <!-- to put a placeholder in the choices, use (disabled selected) -->
+              <option value="" disabled selected>Select the Course</option>
+              <option value="web development">Web Development</option>
+              <option value="teaching">Teaching</option>
+              <option value="Digital Marketing">digital marketing</option>
+              <option value="engineering">Engineering</option>
+              <option value="graphic design">Graphic Design</option>
+              <option value="science & biology">Science & Biology</option>
+            </select>
+          </div>
+
+          <div class="form_group">
+            <label class="label-text">Select Gender</label>
+            <div class="radio">
+              <input
+                type="radio"
+                id="male"
+                value="Male"
+                name="Gender"
+                title="male"
+              />
+              <label class="label-text">Male</label>
+              <input
+                type="radio"
+                id="female"
+                value="Female"
+                name="Gender"
+                title="female"
+              />
+              <label for="female" class="label-text">Female</label>
+            </div>
+          </div>
+
+          <input
+            type="submit"
+            value="Send Message"
+            class="btn-primary submit"
+            name="send"
+          />
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div class="copyright">
+        <div class="socials">
+          <a
+            href="https://linkedin.com"
+            target="_blank"
+            rel="noopener"
+            title="Visit our linkedin page"
+            ><i class="fa-brands fa-linkedin-in"></i
+          ></a>
+
+          <a
+            href="https://twitter.com"
+            target="_blank"
+            rel="noopener"
+            title="Visit our twitter page"
+            ><i class="fa-brands fa-twitter"></i
+          ></a>
+
+          <a
+            href="https://facebook.com"
+            target="_blank"
+            rel="noopener"
+            title="Visit our Facebook page"
+            ><i class="fa-brands fa-facebook-f"></i
+          ></a>
+
+          <a
+            href="https://instagram.com"
+            target="_blank"
+            rel="noopener"
+            title="Visit our instagram page"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+        </div>
+        <div class="share">
+          <a
+            href="https://linkedin.com"
+            target="_blank"
+            rel="noopener"
+            title="Visit our linkedin page"
+            ><i class="fa-brands fa-linkedin-in"></i
+          ></a>
+
+          <a
+            href="https://twitter.com"
+            target="_blank"
+            rel="noopener"
+            title="Visit our twitter page"
+            ><i class="fa-brands fa-twitter"></i
+          ></a>
+
+          <a
+            href="https://facebook.com"
+            target="_blank"
+            rel="noopener"
+            title="Visit our Facebook page"
+            ><i class="fa-brands fa-facebook-f"></i
+          ></a>
+
+          <a href="https://instagram.com" class="fa-brands fa-instagram"></a>
+        </div>
+
+        <small
+          >&copy; Copyright @ 2024 By: <span>Basma Elmasry</span> | All Rights
+          Reserved.</small
+        >
+      </div>
+    </footer>
+    <!-- ################################ -->
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- (swiper js) -->
+    <script>
+      const swiper = new Swiper(".swiper", {
+        direction: "horizontal",
+        grabCursor: true,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        scrollbar: {
+          el: ".swiper-scrollbar",
+          hide: false,
+        },
+        // Default parameters
+        slidesPerView: 1,
+        spaceBetween: 10,
+
+        // Responsive breakpoints
+        breakpoints: {
+          // when window width is >= 450px
+          450: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          // when window width is >= 700px
+          700: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+          // when window width is >= 900px
+          900: {
+            slidesPerView: 3,
+            spaceBetween: 40,
+          },
+        },
+      });
+    </script>
+
+    <!-- custom css file link -->
+    <script src="./main.js"></script>
+    <!-- <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script> -->
+  </body>
+</html>
